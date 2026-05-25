@@ -1428,6 +1428,91 @@ body.lang-te .footer-mantra {
     align-items: center;
     gap: 0.6rem;
 }
+/* ===== Impact & Trust Enhancements ===== */
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+.impact-card {
+    background: rgba(250, 245, 236, 0.8);
+    border: 1px solid var(--saffron-light);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s var(--ease);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.impact-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--saffron);
+    box-shadow: var(--shadow-md);
+    background: var(--ivory);
+}
+.impact-amount {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    color: var(--saffron-deep);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.impact-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--ink-muted);
+    margin-bottom: 1.2rem;
+}
+.impact-card p {
+    font-size: 1rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+}
+
+.trust-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(45, 95, 63, 0.05);
+    border-radius: var(--radius-md);
+    border: 1px dashed var(--leaf-light);
+}
+.trust-badge-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+    min-width: 200px;
+}
+.trust-badge-item i {
+    width: 24px;
+    height: 24px;
+    color: var(--leaf);
+}
+.trust-badge-item div {
+    display: flex;
+    flex-direction: column;
+}
+.trust-badge-item strong {
+    font-size: 0.9rem;
+    color: var(--ink);
+}
+.trust-badge-item span {
+    font-size: 0.75rem;
+    color: var(--ink-muted);
+}
+
+@media (max-width: 768px) {
+    .impact-grid { grid-template-columns: 1fr; }
+}
+
 .mono {
     font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
     letter-spacing: -0.005em;
@@ -2167,7 +2252,4 @@ body.lang-te .footer-mantra {
     .legal-intro { font-size: 1.05rem; }
 }
 
-; margin-top: 2rem; padding-top: 2rem; }
-    .legal-intro { font-size: 1.05rem; }
-}
 
