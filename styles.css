@@ -61,6 +61,13 @@ body {
     font-family: var(--font-body);
     color: var(--ink-soft);
     background-color: var(--ivory);
+    background-image: 
+        linear-gradient(180deg, rgba(250, 245, 236, 0.7) 0%, rgba(250, 245, 236, 0.8) 100%),
+        url('images/hero_background.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -397,12 +404,6 @@ body.lang-te .footer-mantra {
     position: relative;
     padding: 4.5rem 0 6rem;
     overflow: hidden;
-    background:
-        linear-gradient(180deg, rgba(250, 245, 236, 0.7) 0%, rgba(250, 245, 236, 0.5) 100%),
-        radial-gradient(ellipse 70% 60% at 80% 20%, rgba(243, 217, 197, 0.4), transparent 60%),
-        radial-gradient(ellipse 60% 50% at 10% 70%, rgba(201, 137, 47, 0.08), transparent 60%),
-        url('images/hero_background.png') center / cover no-repeat,
-        var(--ivory);
 }
 
 /* Decorative kolam-inspired dot pattern */
@@ -651,7 +652,7 @@ body.lang-te .footer-mantra {
 /* ===== About ===== */
 .about {
     padding: 7rem 0;
-    background: var(--ivory);
+    background: transparent;
     position: relative;
 }
 
@@ -769,10 +770,11 @@ body.lang-te .footer-mantra {
 /* ===== Support ===== */
 .support {
     padding: 7rem 0;
-    background: var(--ivory-warm);
+    background: rgba(250, 245, 236, 0.5); /* Semi-transparent ivory-warm substitute */
     position: relative;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(5px);
 }
 
 .support-grid {
@@ -782,7 +784,7 @@ body.lang-te .footer-mantra {
 }
 
 .support-card {
-    background: var(--ivory);
+    background: rgba(250, 245, 236, 0.9);
     border-radius: var(--radius-md);
     border: 1px solid var(--border);
     position: relative;
@@ -959,7 +961,7 @@ body.lang-te .footer-mantra {
 /* ===== Recent Seva ===== */
 .recent {
     padding: 7rem 0;
-    background: var(--ivory);
+    background: transparent;
 }
 
 .recent-header {
@@ -1790,7 +1792,11 @@ body.lang-te .footer-mantra {
     .nav-cta { display: none; }
     .mobile-menu-btn { display: inline-flex; }
 
-    .logo-text h1, .logo-text h3 { font-size: 1rem; }
+    .nav-container { padding: 0.75rem 1rem; }
+    .logo { gap: 0.6rem; }
+    .logo-mark { width: 34px; height: 34px; }
+    .logo-text h1, .logo-text h3 { font-size: 0.95rem; }
+    .logo-tag { font-size: 0.55rem; letter-spacing: 0.12em; }
 
     .hero { padding: 3rem 0 4rem; }
     .hero-grid { gap: 2.5rem; }
@@ -1884,6 +1890,8 @@ body.lang-te .footer-mantra {
 
 @media (max-width: 480px) {
     .container { padding: 0 1.1rem; }
+    .logo-text h1, .logo-text h3 { font-size: 0.88rem; }
+    .logo-tag { font-size: 0.5rem; }
     .hero-actions { flex-direction: column; align-items: stretch; }
     .hero-actions .btn { width: 100%; }
     .hero-card-pill { font-size: 0.75rem; padding: 0.6rem 0.8rem; }
@@ -2156,6 +2164,10 @@ body.lang-te .footer-mantra {
     .legal-section h2 { font-size: 1.4rem; }
     .legal-section-contact .legal-contact { grid-template-columns: 1fr; }
     .legal-related { grid-template-columns: 1fr; margin-top: 2rem; padding-top: 2rem; }
+    .legal-intro { font-size: 1.05rem; }
+}
+
+; margin-top: 2rem; padding-top: 2rem; }
     .legal-intro { font-size: 1.05rem; }
 }
 
