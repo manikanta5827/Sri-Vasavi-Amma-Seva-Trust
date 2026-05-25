@@ -12,10 +12,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="styles.css?v=3">
+    <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
         <div class="container ribbon-inner">
             <span class="ribbon-mark">सेवा परमो धर्मः</span>
             <span class="ribbon-sep">·</span>
-            <span class="ribbon-text">Registered Charitable Trust · 80G Eligible · URN ABOTS1850PF2026101</span>
+            <span class="ribbon-text" data-te="నమోదిత ధర్మ సంస్థ · 80G అర్హత · URN ABOTS1850PF2026101">Registered Charitable Trust · 80G Eligible · URN ABOTS1850PF2026101</span>
             <span class="ribbon-sep ribbon-hide-sm">·</span>
             <a href="tel:9052963152" class="ribbon-link ribbon-hide-sm"><i data-lucide="phone"></i>9052963152</a>
         </div>
@@ -42,20 +42,25 @@
                     </svg>
                 </span>
                 <div class="logo-text">
-                    <h1>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h1>
-                    <span class="logo-tag">Serve · Support · Uplift</span>
+                    <h1 data-te='శ్రీ వాసవి అమ్మ <span class="logo-accent">సేవా ట్రస్ట్</span>'>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h1>
+                    <span class="logo-tag" data-te="సేవ · మద్దతు · ఉద్ధరణ">Serve · Support · Uplift</span>
                 </div>
             </a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#support">Seva</a></li>
-                <li><a href="#recent">Recent Work</a></li>
-                <li><a href="#membership">Membership</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#about" data-te="గురించి">About</a></li>
+                <li><a href="#support" data-te="సేవ">Seva</a></li>
+                <li><a href="#recent" data-te="ఇటీవలి సేవలు">Recent Work</a></li>
+                <li><a href="#membership" data-te="సభ్యత్వం">Membership</a></li>
+                <li><a href="#faq" data-te="ప్రశ్నలు">FAQ</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-opt" data-lang="en">EN</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-opt" data-lang="te">తె</span>
+            </button>
             <a href="#donate" class="btn btn-primary nav-cta">
                 <i data-lucide="heart"></i>
-                Donate Now
+                <span data-te="విరాళం ఇవ్వండి">Donate Now</span>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle Menu" id="mobileMenuBtn">
                 <i data-lucide="menu"></i>
@@ -65,12 +70,17 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#about">About</a>
-        <a href="#support">Seva</a>
-        <a href="#recent">Recent Work</a>
-        <a href="#membership">Membership</a>
-        <a href="#faq">FAQ</a>
-        <a href="#donate" class="btn btn-primary">Donate Now</a>
+        <a href="#about" data-te="గురించి">About</a>
+        <a href="#support" data-te="సేవ">Seva</a>
+        <a href="#recent" data-te="ఇటీవలి సేవలు">Recent Work</a>
+        <a href="#membership" data-te="సభ్యత్వం">Membership</a>
+        <a href="#faq" data-te="ప్రశ్నలు">FAQ</a>
+        <button class="lang-toggle lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language">
+            <span class="lang-opt" data-lang="en">English</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-opt" data-lang="te">తెలుగు</span>
+        </button>
+        <a href="#donate" class="btn btn-primary" data-te="విరాళం ఇవ్వండి">Donate Now</a>
     </div>
 
     <!-- Hero Section -->
@@ -80,34 +90,34 @@
             <div class="hero-text">
                 <div class="hero-eyebrow">
                     <span class="eyebrow-dot"></span>
-                    <span>Service to Humanity is Service to God</span>
+                    <span data-te="మానవ సేవే మాధవ సేవ">Service to Humanity is Service to God</span>
                 </div>
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-te='తీర్థయాత్రికులకు &amp; సమాజానికి సేవ — <span class="text-accent">విశ్వాసం,</span> <span class="text-accent italic">అన్నం</span> మరియు <span class="text-accent">సంరక్షణతో.</span>'>
                     Serve Pilgrims &amp; Society — with
                     <span class="text-accent">faith,</span>
                     <span class="text-accent italic">food</span> and
                     <span class="text-accent">care.</span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description" data-te="మీ విరాళం క్షేత్రస్థాయి సేవలకు నిధులు అందిస్తుంది — భక్తులకు ఉచిత భోజనం, తీర్థయాత్రికుల వసతి, విద్యార్థులకు చదువు, మరియు అవసరమైన కుటుంబాలకు వైద్య సహాయం. పారదర్శక బ్యాంక్ వివరాలు. 80G పన్ను మినహాయింపు. ఆంధ్రప్రదేశ్‌లోని ప్రొద్దుటూరు నుండి సమన్వయం.">
                     Your donation funds real seva on the ground — free meals for devotees, pilgrim lodging,
                     education for students, and medical help for families in need. Transparent bank details.
                     80G tax exemption. Coordinated from Proddatur, Andhra Pradesh.
                 </p>
 
                 <div class="hero-trust">
-                    <div class="trust-pill"><i data-lucide="shield-check"></i> 80G Tax Exempt</div>
-                    <div class="trust-pill"><i data-lucide="badge-check"></i> Registered Trust</div>
-                    <div class="trust-pill"><i data-lucide="map-pin"></i> Tirumala · Arunachalam · Penugonda</div>
+                    <div class="trust-pill"><i data-lucide="shield-check"></i> <span data-te="80G పన్ను మినహాయింపు">80G Tax Exempt</span></div>
+                    <div class="trust-pill"><i data-lucide="badge-check"></i> <span data-te="నమోదిత సంస్థ">Registered Trust</span></div>
+                    <div class="trust-pill"><i data-lucide="map-pin"></i> <span data-te="తిరుమల · అరుణాచలం · పెనుగొండ">Tirumala · Arunachalam · Penugonda</span></div>
                 </div>
 
                 <div class="hero-actions">
                     <a href="#donate" class="btn btn-primary btn-large">
-                        Donate Now
+                        <span data-te="విరాళం ఇవ్వండి">Donate Now</span>
                         <i data-lucide="arrow-right"></i>
                     </a>
                     <a href="#recent" class="btn btn-ghost btn-large">
                         <i data-lucide="play-circle"></i>
-                        See Recent Seva
+                        <span data-te="ఇటీవలి సేవలు చూడండి">See Recent Seva</span>
                     </a>
                 </div>
             </div>
@@ -119,22 +129,21 @@
                     </video>
                     <div class="hero-card-overlay">
                         <span class="live-dot"></span>
-                        <span>Live seva — buttermilk distribution</span>
+                        <span data-te="ప్రత్యక్ష సేవ — మజ్జిగ పంపిణీ">Live seva — buttermilk distribution</span>
                     </div>
                 </div>
                 <div class="hero-card hero-card-float">
                     <div class="hero-stat">
                         <span class="stat-num">3</span>
-                        <span class="stat-label">Sacred<br>Pilgrim Centres</span>
+                        <span class="stat-label" data-te="పవిత్ర తీర్థక్షేత్రాలు">Sacred<br>Pilgrim Centres</span>
                     </div>
                 </div>
                 <div class="hero-card hero-card-pill">
                     <i data-lucide="utensils"></i>
-                    <span>Annadanam<br><strong>Every Week</strong></span>
+                    <span data-te='అన్నదానం<br><strong>ప్రతి వారం</strong>'>Annadanam<br><strong>Every Week</strong></span>
                 </div>
             </div>
         </div>
-
     </header>
 
     <!-- About Section -->
@@ -142,17 +151,17 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
-                    <span class="section-eyebrow">About the Trust</span>
-                    <h2 class="section-title">
+                    <span class="section-eyebrow" data-te="ట్రస్ట్ గురించి">About the Trust</span>
+                    <h2 class="section-title" data-te="<em>తీర్థయాత్రికుల సేవ</em> మరియు సమాజ ఉద్ధరణకు అంకితమైన నమోదిత ధర్మ సంస్థ.">
                         A registered charitable trust dedicated to
                         <em>pilgrim seva</em> and community uplift.
                     </h2>
-                    <p class="lead">
+                    <p class="lead" data-te="శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్ తీర్థయాత్రికులకు మరియు సమాజానికి అన్నదానం, విద్య, వైద్య సంరక్షణ, అనాథ సహాయం, తీర్థయాత్రికుల వసతి, ఆలయ మౌలిక సదుపాయాలు మరియు యువ అభివృద్ధి ద్వారా సేవ చేయడానికి అంకితమైంది.">
                         Sri Vasavi Amma Seva Trust is dedicated to serving pilgrims and society through
                         annadanam, education, medical care, orphan support, pilgrim accommodation, temple
                         infrastructure, and youth development.
                     </p>
-                    <p>
+                    <p data-te="ప్రతి సేవా చర్య మానవత్వాన్ని ఉద్ధరిస్తుందని మరియు దైవిక ఆశీర్వాదాలను పొందిస్తుందని మేము నమ్ముతాము. ఆంధ్రప్రదేశ్, కడప జిల్లాలోని ప్రొద్దుటూరు నుండి పనిచేస్తూ, ప్రతి రూపాయికి లెక్క ఉంది మరియు రాష్ట్రవ్యాప్తంగా ముఖ్య ఆలయ కేంద్రాలలో క్రియాశీల సేవా పనికి మళ్లించబడుతుంది.">
                         We believe that every act of service uplifts humanity and earns divine blessings.
                         Operating from Proddatur in Kadapa District, Andhra Pradesh, every rupee is
                         accounted for and directed to active seva work at major temple centres across the
@@ -161,16 +170,16 @@
 
                     <div class="about-meta">
                         <div class="meta-item">
-                            <span class="meta-label">Based In</span>
-                            <span class="meta-value">Proddatur, Kadapa Dist.</span>
+                            <span class="meta-label" data-te="స్థానం">Based In</span>
+                            <span class="meta-value" data-te="ప్రొద్దుటూరు, కడప జిల్లా">Proddatur, Kadapa Dist.</span>
                         </div>
                         <div class="meta-item">
-                            <span class="meta-label">Registration</span>
+                            <span class="meta-label" data-te="నమోదు">Registration</span>
                             <span class="meta-value">URN ABOTS1850PF2026101</span>
                         </div>
                         <div class="meta-item">
-                            <span class="meta-label">President</span>
-                            <span class="meta-value">E. V. Suresh<br><small>20+ yrs VLSI DV · Ex-Google, Qualcomm, Intel</small></span>
+                            <span class="meta-label" data-te="అధ్యక్షుడు">President</span>
+                            <span class="meta-value" data-te="ఇ. వి. సురేష్<br><small>20+ సం. VLSI DV · మాజీ Google, Qualcomm, Intel</small>">E. V. Suresh<br><small>20+ yrs VLSI DV · Ex-Google, Qualcomm, Intel</small></span>
                         </div>
                     </div>
                 </div>
@@ -179,33 +188,33 @@
                     <div class="temple-tile">
                         <img src="images/tirumala-venkateswara-temple-in-tirupati.jpg" alt="Tirumala — Sri Venkateswara Swamy Temple" loading="lazy">
                         <div class="temple-tile-info">
-                            <span class="temple-tag">Pilgrim Centre 01</span>
-                            <h4>Tirumala</h4>
-                            <p>Sri Venkateswara Swamy Temple</p>
+                            <span class="temple-tag" data-te="తీర్థక్షేత్రం 01">Pilgrim Centre 01</span>
+                            <h4 data-te="తిరుమల">Tirumala</h4>
+                            <p data-te="శ్రీ వెంకటేశ్వర స్వామి దేవస్థానం">Sri Venkateswara Swamy Temple</p>
                         </div>
                     </div>
                     <div class="temple-tile">
                         <img src="images/Arunachalam_temple_from_a_nearby_hill.jpg" alt="Arunachalam — Sri Arunachaleswara Swamy Temple" loading="lazy">
                         <div class="temple-tile-info">
-                            <span class="temple-tag">Pilgrim Centre 02</span>
-                            <h4>Arunachalam</h4>
-                            <p>Sri Arunachaleswara Swamy Temple</p>
+                            <span class="temple-tag" data-te="తీర్థక్షేత్రం 02">Pilgrim Centre 02</span>
+                            <h4 data-te="అరుణాచలం">Arunachalam</h4>
+                            <p data-te="శ్రీ అరుణాచలేశ్వర స్వామి దేవస్థానం">Sri Arunachaleswara Swamy Temple</p>
                         </div>
                     </div>
                     <div class="temple-tile">
                         <img src="images/penugonda-temple.jpg" alt="Penugonda — Sri Penugonda Ammavari Temple" loading="lazy">
                         <div class="temple-tile-info">
-                            <span class="temple-tag">Pilgrim Centre 03</span>
-                            <h4>Penugonda</h4>
-                            <p>Sri Penugonda Ammavari Temple</p>
+                            <span class="temple-tag" data-te="తీర్థక్షేత్రం 03">Pilgrim Centre 03</span>
+                            <h4 data-te="పెనుగొండ">Penugonda</h4>
+                            <p data-te="శ్రీ పెనుగొండ అమ్మవారి దేవస్థానం">Sri Penugonda Ammavari Temple</p>
                         </div>
                     </div>
                     <div class="temple-tile">
                         <img src="images/srisailam-tourism-header.jpg" alt="Srisailam — Sri Bhramaramba Mallikarjuna Temple" loading="lazy">
                         <div class="temple-tile-info">
-                            <span class="temple-tag">Pilgrim Centre 04</span>
-                            <h4>Srisailam</h4>
-                            <p>Sri Bhramaramba Mallikarjuna Temple</p>
+                            <span class="temple-tag" data-te="తీర్థక్షేత్రం 04">Pilgrim Centre 04</span>
+                            <h4 data-te="శ్రీశైలం">Srisailam</h4>
+                            <p data-te="శ్రీ భ్రమరాంబా మల్లికార్జున దేవస్థానం">Sri Bhramaramba Mallikarjuna Temple</p>
                         </div>
                     </div>
                 </div>
@@ -217,8 +226,8 @@
     <section class="support" id="support">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Your Support For</span>
-                <h2 class="section-title">Every contribution helps us serve pilgrims and uplift communities.</h2>
+                <span class="section-eyebrow" data-te="మీ మద్దతు దేనికి">Your Support For</span>
+                <h2 class="section-title" data-te="ప్రతి విరాళం తీర్థయాత్రికులకు సేవ చేయడానికి మరియు సమాజాలను ఉద్ధరించడానికి సహాయపడుతుంది.">Every contribution helps us serve pilgrims and uplift communities.</h2>
             </div>
 
             <div class="support-grid">
@@ -228,8 +237,8 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="utensils"></i></div>
-                        <h3>Annadanam</h3>
-                        <p>Providing nutritious meals to devotees and those in need at temple centres.</p>
+                        <h3 data-te="అన్నదానం">Annadanam</h3>
+                        <p data-te="దేవస్థానాల వద్ద భక్తులకు మరియు అవసరమైన వారికి పౌష్టికాహారం అందిస్తున్నాము.">Providing nutritious meals to devotees and those in need at temple centres.</p>
                     </div>
                 </article>
 
@@ -239,30 +248,30 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="graduation-cap"></i></div>
-                        <h3>Education Support</h3>
-                        <p>Helping students with schooling fees, books and educational resources.</p>
+                        <h3 data-te="విద్యా సహాయం">Education Support</h3>
+                        <p data-te="విద్యార్థులకు పాఠశాల ఫీజులు, పుస్తకాలు మరియు విద్యా వనరులతో సహాయం.">Helping students with schooling fees, books and educational resources.</p>
                     </div>
                 </article>
 
-                <article class="support-card" data-num="03">
-                    <div class="support-card-media support-card-media-decor decor-medical">
-                        <i data-lucide="heart-pulse"></i>
+                <article class="support-card has-image" data-num="03">
+                    <div class="support-card-media">
+                        <img src="images/medical-support.webp" alt="Medical support — health checkups and treatment aid" loading="lazy">
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="heart-pulse"></i></div>
-                        <h3>Medical Support</h3>
-                        <p>Healthcare assistance and treatment aid for underserved communities.</p>
+                        <h3 data-te="వైద్య సహాయం">Medical Support</h3>
+                        <p data-te="అవసరమైన సమాజాలకు ఆరోగ్య సహాయం మరియు చికిత్స మద్దతు.">Healthcare assistance and treatment aid for underserved communities.</p>
                     </div>
                 </article>
 
-                <article class="support-card" data-num="04">
-                    <div class="support-card-media support-card-media-decor decor-orphans">
-                        <i data-lucide="baby"></i>
+                <article class="support-card has-image" data-num="04">
+                    <div class="support-card-media">
+                        <img src="images/orphans.jpg" alt="Support for orphans — care, shelter and a future for children" loading="lazy">
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="baby"></i></div>
-                        <h3>Support for Orphans</h3>
-                        <p>Care, shelter and a future for children without parental care.</p>
+                        <h3 data-te="అనాథ పిల్లల సంరక్షణ">Support for Orphans</h3>
+                        <p data-te="తల్లిదండ్రులు లేని పిల్లలకు సంరక్షణ, ఆశ్రయం మరియు భవిష్యత్తు.">Care, shelter and a future for children without parental care.</p>
                     </div>
                 </article>
 
@@ -272,19 +281,19 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="bed-double"></i></div>
-                        <h3>Pilgrim Accommodation</h3>
-                        <p>Clean, comfortable lodging for devotees at pilgrimage centres.</p>
+                        <h3 data-te="తీర్థయాత్రికుల వసతి">Pilgrim Accommodation</h3>
+                        <p data-te="తీర్థక్షేత్రాల వద్ద భక్తులకు శుభ్రమైన, సౌకర్యవంతమైన వసతి.">Clean, comfortable lodging for devotees at pilgrimage centres.</p>
                     </div>
                 </article>
 
-                <article class="support-card" data-num="06">
-                    <div class="support-card-media support-card-media-decor decor-mandapam">
-                        <i data-lucide="landmark"></i>
+                <article class="support-card has-image" data-num="06">
+                    <div class="support-card-media">
+                        <img src="images/kalyana-mandapam.avif" alt="Kalyana Mandapams — community halls at pilgrimage centres" loading="lazy">
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="landmark"></i></div>
-                        <h3>Kalyana Mandapams</h3>
-                        <p>Construction of community halls at major pilgrimage centres.</p>
+                        <h3 data-te="కళ్యాణ మండపాలు">Kalyana Mandapams</h3>
+                        <p data-te="ముఖ్య తీర్థక్షేత్రాల వద్ద సమాజ మండపాల నిర్మాణం.">Construction of community halls at major pilgrimage centres.</p>
                     </div>
                 </article>
 
@@ -294,8 +303,8 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="medal"></i></div>
-                        <h3>Olympic Athletes</h3>
-                        <p>Training, sponsorship and international opportunities for athletes.</p>
+                        <h3 data-te="ఒలింపిక్ క్రీడాకారులు">Olympic Athletes</h3>
+                        <p data-te="క్రీడాకారులకు శిక్షణ, స్పాన్సర్‌షిప్ మరియు అంతర్జాతీయ అవకాశాలు.">Training, sponsorship and international opportunities for athletes.</p>
                     </div>
                 </article>
 
@@ -305,8 +314,8 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="briefcase"></i></div>
-                        <h3>Youth Employment</h3>
-                        <p>Skill-building and job pathways for young men and women.</p>
+                        <h3 data-te="యువతకు ఉపాధి">Youth Employment</h3>
+                        <p data-te="యువతీయువకులకు నైపుణ్యాభివృద్ధి మరియు ఉద్యోగ మార్గాలు.">Skill-building and job pathways for young men and women.</p>
                     </div>
                 </article>
 
@@ -316,9 +325,9 @@
                     </div>
                     <div class="support-card-body">
                         <div class="support-card-icon"><i data-lucide="sparkles"></i></div>
-                        <h3>And much more</h3>
-                        <p>Special programs across VLSI/IT funding and community uplift.</p>
-                        <a href="#programs" class="card-link">Explore programs <i data-lucide="arrow-up-right"></i></a>
+                        <h3 data-te="ఇంకా ఎన్నో">And much more</h3>
+                        <p data-te="VLSI/IT నిధులు మరియు సమాజ ఉద్ధరణ కోసం ప్రత్యేక కార్యక్రమాలు.">Special programs across VLSI/IT funding and community uplift.</p>
+                        <a href="#programs" class="card-link"><span data-te="కార్యక్రమాలను చూడండి">Explore programs</span> <i data-lucide="arrow-up-right"></i></a>
                     </div>
                 </article>
             </div>
@@ -330,12 +339,12 @@
         <div class="container">
             <div class="section-header recent-header">
                 <div>
-                    <span class="section-eyebrow">Recent Seva Activities</span>
-                    <h2 class="section-title">Glimpses from the ground —
+                    <span class="section-eyebrow" data-te="ఇటీవలి సేవా కార్యకలాపాలు">Recent Seva Activities</span>
+                    <h2 class="section-title" data-te="క్షేత్రస్థాయి దృశ్యాలు — <em>మీ ఔదార్యం వల్ల సాధ్యమైనది.</em>">Glimpses from the ground —
                         <em>made possible by your generosity.</em>
                     </h2>
                 </div>
-                <p class="recent-blurb">
+                <p class="recent-blurb" data-te="ఇటీవలి అన్నదానం మరియు సామాజిక సేవ — వేసవి నెలల్లో స్థానిక ప్రజలకు మజ్జిగ పంపిణీతో సహా.">
                     Recent annadanam and community service — including buttermilk distribution
                     to local people during the summer months.
                 </p>
@@ -348,9 +357,9 @@
                         Your browser does not support video playback.
                     </video>
                     <div class="recent-caption">
-                        <span class="recent-tag"><i data-lucide="play"></i> Video · Part 1</span>
-                        <h4>Buttermilk Seva for Locals</h4>
-                        <p>Volunteers distributing chilled buttermilk to the community during summer heat.</p>
+                        <span class="recent-tag"><i data-lucide="play"></i> <span data-te="వీడియో · భాగం 1">Video · Part 1</span></span>
+                        <h4 data-te="స్థానికులకు మజ్జిగ సేవ">Buttermilk Seva for Locals</h4>
+                        <p data-te="వేసవి వేడిలో సమాజానికి చల్లని మజ్జిగను పంపిణీ చేస్తున్న వాలంటీర్లు.">Volunteers distributing chilled buttermilk to the community during summer heat.</p>
                     </div>
                 </div>
 
@@ -360,9 +369,9 @@
                         Your browser does not support video playback.
                     </video>
                     <div class="recent-caption">
-                        <span class="recent-tag"><i data-lucide="play"></i> Video · Part 2</span>
-                        <h4>Seva in Progress</h4>
-                        <p>Distribution drive continues — every cup served is a blessing earned.</p>
+                        <span class="recent-tag"><i data-lucide="play"></i> <span data-te="వీడియో · భాగం 2">Video · Part 2</span></span>
+                        <h4 data-te="కొనసాగుతున్న సేవ">Seva in Progress</h4>
+                        <p data-te="పంపిణీ కార్యక్రమం కొనసాగుతోంది — అందించిన ప్రతి కప్పు ఒక ఆశీర్వాదం.">Distribution drive continues — every cup served is a blessing earned.</p>
                     </div>
                 </div>
             </div>
@@ -374,11 +383,11 @@
         <div class="container">
             <div class="programs-card">
                 <div class="programs-text">
-                    <span class="section-eyebrow eyebrow-light">Special Programs</span>
-                    <h2 class="section-title text-light">
+                    <span class="section-eyebrow eyebrow-light" data-te="ప్రత్యేక కార్యక్రమాలు">Special Programs</span>
+                    <h2 class="section-title text-light" data-te="మా ప్రధాన సేవా ప్రాంతాలకు మించిన దృష్టి కేంద్రీకృత ప్రాజెక్టులు.">
                         Focused initiatives beyond our core seva areas.
                     </h2>
-                    <p class="text-muted-light">
+                    <p class="text-muted-light" data-te="మేము గరిష్ట ప్రభావం సృష్టించే చోట మద్దతు అందిస్తాము — రేపటి క్రీడాకారులు, ఇంజనీర్లు మరియు ఆర్జనపరులకు మద్దతు ఇస్తాము.">
                         We extend support where it creates the most impact — backing tomorrow's athletes,
                         engineers and earners.
                     </p>
@@ -387,24 +396,24 @@
                     <li>
                         <span class="program-num">01</span>
                         <div>
-                            <h4>National &amp; Olympic Athletes</h4>
-                            <p>Training, sponsorship, and international opportunities for athletes representing India.</p>
+                            <h4 data-te="జాతీయ &amp; ఒలింపిక్ క్రీడాకారులు">National &amp; Olympic Athletes</h4>
+                            <p data-te="భారతదేశానికి ప్రాతినిధ్యం వహించే క్రీడాకారులకు శిక్షణ, స్పాన్సర్‌షిప్ మరియు అంతర్జాతీయ అవకాశాలు.">Training, sponsorship, and international opportunities for athletes representing India.</p>
                         </div>
                         <i data-lucide="medal" class="program-icon"></i>
                     </li>
                     <li>
                         <span class="program-num">02</span>
                         <div>
-                            <h4>VLSI &amp; IT Professionals</h4>
-                            <p>Funding and mentorship for engineers building India's semiconductor future.</p>
+                            <h4 data-te="VLSI &amp; IT నిపుణులు">VLSI &amp; IT Professionals</h4>
+                            <p data-te="భారతదేశ సెమికండక్టర్ భవిష్యత్తును నిర్మిస్తున్న ఇంజనీర్లకు నిధులు మరియు మార్గదర్శకత్వం.">Funding and mentorship for engineers building India's semiconductor future.</p>
                         </div>
                         <i data-lucide="cpu" class="program-icon"></i>
                     </li>
                     <li>
                         <span class="program-num">03</span>
                         <div>
-                            <h4>Youth Employment</h4>
-                            <p>Skill-building and job-pathway support for young men and women.</p>
+                            <h4 data-te="యువతకు ఉపాధి">Youth Employment</h4>
+                            <p data-te="యువతీయువకులకు నైపుణ్యాభివృద్ధి మరియు ఉద్యోగ మార్గాల మద్దతు.">Skill-building and job-pathway support for young men and women.</p>
                         </div>
                         <i data-lucide="briefcase" class="program-icon"></i>
                     </li>
@@ -418,53 +427,53 @@
         <div class="container">
             <div class="membership-grid">
                 <div class="membership-info">
-                    <span class="section-eyebrow">Donor Membership Open</span>
-                    <h2 class="section-title">
+                    <span class="section-eyebrow" data-te="దాత సభ్యత్వం తెరిచి ఉంది">Donor Membership Open</span>
+                    <h2 class="section-title" data-te="దాత సభ్యునిగా మారండి — <em>మీరు సందర్శించినప్పుడు మాతో ఉండండి.</em>">
                         Become a donor member —
                         <em>and stay with us when you visit.</em>
                     </h2>
-                    <p>
+                    <p data-te="ఒకసారి విరాళం మా సేవను సంవత్సరాలపాటు కొనసాగిస్తుంది మరియు మీకు, మీ కుటుంబానికి ప్రైవేట్ ప్రయోజనం కలిగిస్తుంది — మా తీర్థయాత్రికుల వసతుల్లో 4 సభ్యుల వరకు 3 రోజుల ఉచిత వసతి.">
                         A one-time contribution sustains our seva for years and includes a private benefit
                         for you and your family — 3 days of complimentary accommodation at our pilgrim
                         facilities, for up to 4 members.
                     </p>
                     <ul class="benefits-list">
-                        <li><i data-lucide="check"></i> Up to 4 members per donor membership</li>
-                        <li><i data-lucide="check"></i> 3 days free accommodation at pilgrim facilities</li>
-                        <li><i data-lucide="check"></i> Priority access to seva &amp; trust events</li>
-                        <li><i data-lucide="check"></i> 80G tax benefit eligibility</li>
-                        <li><i data-lucide="check"></i> Annual seva report &amp; updates</li>
+                        <li><i data-lucide="check"></i> <span data-te="ఒక దాత సభ్యత్వానికి 4 సభ్యుల వరకు">Up to 4 members per donor membership</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="తీర్థయాత్రికుల వసతుల్లో 3 రోజుల ఉచిత వసతి">3 days free accommodation at pilgrim facilities</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="సేవ &amp; ట్రస్ట్ కార్యక్రమాలకు ప్రాధాన్యత">Priority access to seva &amp; trust events</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="80G పన్ను ప్రయోజన అర్హత">80G tax benefit eligibility</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="వార్షిక సేవా నివేదిక &amp; నవీకరణలు">Annual seva report &amp; updates</span></li>
                     </ul>
                 </div>
 
                 <aside class="pricing-card">
-                    <div class="pricing-ribbon">Featured</div>
+                    <div class="pricing-ribbon" data-te="ప్రత్యేకం">Featured</div>
                     <div class="pricing-top">
-                        <span class="pricing-label">Donor Membership</span>
+                        <span class="pricing-label" data-te="దాత సభ్యత్వం">Donor Membership</span>
                         <div class="pricing-amount">
                             <span class="currency">₹</span>
                             <span class="number">50,000</span>
                         </div>
-                        <span class="pricing-sub">One-time · Up to 4 members</span>
+                        <span class="pricing-sub" data-te="ఒకసారి · 4 సభ్యుల వరకు">One-time · Up to 4 members</span>
                     </div>
 
                     <div class="pricing-divider">
-                        <span>What you fund</span>
+                        <span data-te="మీరు ఏది ఫండ్ చేస్తారు">What you fund</span>
                     </div>
 
                     <div class="pricing-chips">
-                        <span>Annadanam</span>
-                        <span>Education</span>
-                        <span>Medical</span>
-                        <span>Orphans</span>
-                        <span>Lodging</span>
-                        <span>Kalyana Mandapams</span>
+                        <span data-te="అన్నదానం">Annadanam</span>
+                        <span data-te="విద్య">Education</span>
+                        <span data-te="వైద్యం">Medical</span>
+                        <span data-te="అనాథలు">Orphans</span>
+                        <span data-te="వసతి">Lodging</span>
+                        <span data-te="కళ్యాణ మండపాలు">Kalyana Mandapams</span>
                     </div>
 
                     <a href="tel:9052963152" class="btn btn-primary btn-block">
-                        <i data-lucide="phone-call"></i> Enquire: 9052963152
+                        <i data-lucide="phone-call"></i> <span data-te="విచారణ: 9052963152">Enquire: 9052963152</span>
                     </a>
-                    <p class="pricing-foot">
+                    <p class="pricing-foot" data-te='లేదా <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a> కు రాయండి'>
                         Or write to <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a>
                     </p>
                 </aside>
@@ -477,12 +486,12 @@
         <div class="container">
             <div class="donate-grid">
                 <div class="donate-intro">
-                    <span class="section-eyebrow">Donate &amp; Tax Benefits</span>
-                    <h2 class="section-title">
+                    <span class="section-eyebrow" data-te="విరాళం &amp; పన్ను ప్రయోజనాలు">Donate &amp; Tax Benefits</span>
+                    <h2 class="section-title" data-te="మీ చిన్న విరాళం — <em>ఎవరికో పెద్ద ఆశ.</em>">
                         Your small contribution —
                         <em>someone's big hope.</em>
                     </h2>
-                    <p>
+                    <p data-te="విరాళాలు నేరుగా అన్నదానం, విద్య, వైద్య సంరక్షణ మరియు తీర్థయాత్రికుల సేవలకు నిధులు అందిస్తాయి. నేరుగా బదిలీ కోసం దిగువ బ్యాంక్ వివరాలను ఉపయోగించండి. మీ 80G ఆదాయపు పన్ను ఫైలింగ్ కోసం రసీదును ఉంచుకోండి.">
                         Donations directly fund annadanam, education, medical care, and pilgrim services.
                         Use the bank details below for a direct transfer. Please retain the receipt for
                         your 80G income tax filing.
@@ -490,11 +499,11 @@
                     <div class="donate-contact">
                         <a href="tel:9052963152" class="contact-line">
                             <i data-lucide="phone"></i>
-                            <span><small>Donations</small><strong>9052963152</strong></span>
+                            <span><small data-te="విరాళాలు">Donations</small><strong>9052963152</strong></span>
                         </a>
                         <a href="mailto:svamsevatrust@gmail.com" class="contact-line">
                             <i data-lucide="mail"></i>
-                            <span><small>Email</small><strong>svamsevatrust@gmail.com</strong></span>
+                            <span><small data-te="ఇమెయిల్">Email</small><strong>svamsevatrust@gmail.com</strong></span>
                         </a>
                     </div>
                 </div>
@@ -502,16 +511,16 @@
                 <div class="donate-cards">
                     <article class="bank-card">
                         <div class="bank-card-top">
-                            <span class="bank-card-label">Bank Details</span>
+                            <span class="bank-card-label" data-te="బ్యాంక్ వివరాలు">Bank Details</span>
                             <i data-lucide="landmark"></i>
                         </div>
                         <div class="bank-rows">
                             <div class="bank-row">
-                                <span class="bank-key">Bank Name</span>
+                                <span class="bank-key" data-te="బ్యాంక్ పేరు">Bank Name</span>
                                 <span class="bank-val">HDFC Bank</span>
                             </div>
                             <div class="bank-row">
-                                <span class="bank-key">Account Number</span>
+                                <span class="bank-key" data-te="ఖాతా నంబర్">Account Number</span>
                                 <span class="bank-val mono copy-target" data-copy="50200120468025">
                                     50200120468025
                                     <button class="copy-btn" data-copy="50200120468025" aria-label="Copy account number">
@@ -520,7 +529,7 @@
                                 </span>
                             </div>
                             <div class="bank-row">
-                                <span class="bank-key">IFSC Code</span>
+                                <span class="bank-key" data-te="IFSC కోడ్">IFSC Code</span>
                                 <span class="bank-val mono copy-target" data-copy="HDFC0006514">
                                     HDFC0006514
                                     <button class="copy-btn" data-copy="HDFC0006514" aria-label="Copy IFSC code">
@@ -529,15 +538,15 @@
                                 </span>
                             </div>
                             <div class="bank-row">
-                                <span class="bank-key">Beneficiary</span>
-                                <span class="bank-val">Sri Vasavi Amma Seva Trust</span>
+                                <span class="bank-key" data-te="లబ్ధిదారు">Beneficiary</span>
+                                <span class="bank-val" data-te="శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్">Sri Vasavi Amma Seva Trust</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="tax-card">
                         <div class="tax-card-top">
-                            <span class="bank-card-label">Tax Exemptions &amp; Approvals</span>
+                            <span class="bank-card-label" data-te="పన్ను మినహాయింపులు &amp; ఆమోదాలు">Tax Exemptions &amp; Approvals</span>
                             <i data-lucide="shield-check"></i>
                         </div>
                         <div class="tax-rows">
@@ -546,16 +555,16 @@
                                 <span class="tax-val mono">ABOTS1850PF2026101</span>
                             </div>
                             <div class="tax-row">
-                                <span class="tax-key">Status</span>
-                                <span class="tax-val">Eligible for 80G Tax Exemption</span>
+                                <span class="tax-key" data-te="స్థితి">Status</span>
+                                <span class="tax-val" data-te="80G పన్ను మినహాయింపుకు అర్హత">Eligible for 80G Tax Exemption</span>
                             </div>
                             <div class="tax-row">
-                                <span class="tax-key">Effective Date</span>
-                                <span class="tax-val">30 March 2026</span>
+                                <span class="tax-key" data-te="ప్రభావిత తేదీ">Effective Date</span>
+                                <span class="tax-val" data-te="30 మార్చి 2026">30 March 2026</span>
                             </div>
                             <div class="tax-row">
-                                <span class="tax-key">Validity</span>
-                                <span class="tax-val">AY 2026–27 to 2028–29</span>
+                                <span class="tax-key" data-te="చెల్లుబాటు">Validity</span>
+                                <span class="tax-val" data-te="AY 2026–27 నుండి 2028–29 వరకు">AY 2026–27 to 2028–29</span>
                             </div>
                         </div>
                     </article>
@@ -569,11 +578,11 @@
         <div class="container">
             <div class="faq-grid">
                 <div class="faq-side">
-                    <span class="section-eyebrow">Frequently Asked Questions</span>
-                    <h2 class="section-title">
+                    <span class="section-eyebrow" data-te="తరచుగా అడిగే ప్రశ్నలు">Frequently Asked Questions</span>
+                    <h2 class="section-title" data-te="విరాళాలు, 80G, సభ్యత్వం మరియు మా సేవా పనుల గురించి స్పష్టమైన సమాధానాలు.">
                         Clear answers about donations, 80G, membership and our seva work.
                     </h2>
-                    <p>
+                    <p data-te='మరో ప్రశ్న ఉందా? <a href="tel:9052963152">9052963152</a> కు కాల్ చేయండి లేదా <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a> కు రాయండి.'>
                         Have a different question? Call <a href="tel:9052963152">9052963152</a> or write
                         to <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a>.
                     </p>
@@ -582,61 +591,61 @@
                 <div class="faq-list">
                     <details class="faq-item" open>
                         <summary>
-                            <span>What is Sri Vasavi Amma Seva Trust?</span>
+                            <span data-te="శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్ అంటే ఏమిటి?">What is Sri Vasavi Amma Seva Trust?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>We are a registered charitable trust based in Proddatur, Andhra Pradesh. We serve pilgrims and communities through annadanam (free meals), education support, medical aid, orphan care, and pilgrim accommodation at major temple centres including Tirumala, Arunachalam, and Penugonda.</p>
+                            <p data-te="మేము ఆంధ్రప్రదేశ్‌లోని ప్రొద్దుటూరులో ఉన్న నమోదిత ధర్మ సంస్థ. మేము తీర్థయాత్రికులకు మరియు సమాజాలకు తిరుమల, అరుణాచలం మరియు పెనుగొండ వంటి ముఖ్య ఆలయ కేంద్రాల వద్ద అన్నదానం (ఉచిత భోజనం), విద్యా సహాయం, వైద్య సహాయం, అనాథ సంరక్షణ మరియు తీర్థయాత్రికుల వసతి ద్వారా సేవ చేస్తాము.">We are a registered charitable trust based in Proddatur, Andhra Pradesh. We serve pilgrims and communities through annadanam (free meals), education support, medical aid, orphan care, and pilgrim accommodation at major temple centres including Tirumala, Arunachalam, and Penugonda.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            <span>Is my donation eligible for 80G tax exemption?</span>
+                            <span data-te="నా విరాళం 80G పన్ను మినహాయింపుకు అర్హమా?">Is my donation eligible for 80G tax exemption?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>Yes. Donations are eligible for 80G tax exemption under URN <strong>ABOTS1850PF2026101</strong>, effective 30 March 2026, valid for assessment years 2026–27 through 2028–29. Please retain your donation receipt for income tax filing.</p>
+                            <p data-te="అవును. విరాళాలు URN <strong>ABOTS1850PF2026101</strong> కింద 80G పన్ను మినహాయింపుకు అర్హమైనవి, 30 మార్చి 2026 నుండి ప్రభావవంతంగా, 2026–27 నుండి 2028–29 అసెస్‌మెంట్ సంవత్సరాల వరకు చెల్లుబాటు అవుతాయి. దయచేసి ఆదాయపు పన్ను ఫైలింగ్ కోసం మీ విరాళ రసీదును ఉంచుకోండి.">Yes. Donations are eligible for 80G tax exemption under URN <strong>ABOTS1850PF2026101</strong>, effective 30 March 2026, valid for assessment years 2026–27 through 2028–29. Please retain your donation receipt for income tax filing.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            <span>How can I donate?</span>
+                            <span data-te="నేను ఎలా విరాళం ఇవ్వగలను?">How can I donate?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>You can donate via bank transfer to our HDFC Bank account (A/c <strong>50200120468025</strong>, IFSC <strong>HDFC0006514</strong>) or call <a href="tel:9052963152">9052963152</a> for guidance. Full bank details are listed in the Donate section above.</p>
+                            <p data-te='మీరు మా HDFC బ్యాంక్ ఖాతా (A/c <strong>50200120468025</strong>, IFSC <strong>HDFC0006514</strong>) కు బ్యాంక్ ట్రాన్స్‌ఫర్ ద్వారా విరాళం ఇవ్వవచ్చు లేదా మార్గదర్శకత్వం కోసం <a href="tel:9052963152">9052963152</a> కు కాల్ చేయండి. పూర్తి బ్యాంక్ వివరాలు పైన విరాళం విభాగంలో జాబితా చేయబడ్డాయి.'>You can donate via bank transfer to our HDFC Bank account (A/c <strong>50200120468025</strong>, IFSC <strong>HDFC0006514</strong>) or call <a href="tel:9052963152">9052963152</a> for guidance. Full bank details are listed in the Donate section above.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            <span>What is donor membership and what are the benefits?</span>
+                            <span data-te="దాత సభ్యత్వం అంటే ఏమిటి మరియు ప్రయోజనాలు ఏమిటి?">What is donor membership and what are the benefits?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>Donor membership is available at <strong>₹50,000</strong> for up to four members. Members receive 3 days of complimentary accommodation at our pilgrim facilities. Contact us at <a href="tel:9052963152">9052963152</a> or <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a> to enquire.</p>
+                            <p data-te='దాత సభ్యత్వం 4 సభ్యుల వరకు <strong>₹50,000</strong> కు అందుబాటులో ఉంది. సభ్యులకు మా తీర్థయాత్రికుల వసతుల్లో 3 రోజుల ఉచిత వసతి లభిస్తుంది. విచారణకు <a href="tel:9052963152">9052963152</a> లేదా <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a> కు సంప్రదించండి.'>Donor membership is available at <strong>₹50,000</strong> for up to four members. Members receive 3 days of complimentary accommodation at our pilgrim facilities. Contact us at <a href="tel:9052963152">9052963152</a> or <a href="mailto:svamsevatrust@gmail.com">svamsevatrust@gmail.com</a> to enquire.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            <span>Where does the trust provide pilgrim accommodation?</span>
+                            <span data-te="ట్రస్ట్ ఎక్కడ తీర్థయాత్రికుల వసతిని అందిస్తుంది?">Where does the trust provide pilgrim accommodation?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>We support pilgrims visiting Sri Venkateswara Swamy Temple (Tirumala), Sri Arunachaleswara Swamy Temple (Arunachalam), and Sri Penugonda Ammavari Temple (Penugonda). All seva activities are coordinated from Proddatur, Kadapa District.</p>
+                            <p data-te="మేము శ్రీ వెంకటేశ్వర స్వామి దేవస్థానం (తిరుమల), శ్రీ అరుణాచలేశ్వర స్వామి దేవస్థానం (అరుణాచలం) మరియు శ్రీ పెనుగొండ అమ్మవారి దేవస్థానం (పెనుగొండ) సందర్శించే తీర్థయాత్రికులకు మద్దతు ఇస్తాము. అన్ని సేవా కార్యకలాపాలు ప్రొద్దుటూరు, కడప జిల్లా నుండి సమన్వయం చేయబడతాయి.">We support pilgrims visiting Sri Venkateswara Swamy Temple (Tirumala), Sri Arunachaleswara Swamy Temple (Arunachalam), and Sri Penugonda Ammavari Temple (Penugonda). All seva activities are coordinated from Proddatur, Kadapa District.</p>
                         </div>
                     </details>
 
                     <details class="faq-item">
                         <summary>
-                            <span>What seva activities does the trust perform?</span>
+                            <span data-te="ట్రస్ట్ ఏ సేవా కార్యకలాపాలు నిర్వహిస్తుంది?">What seva activities does the trust perform?</span>
                             <i data-lucide="plus" class="faq-icon"></i>
                         </summary>
                         <div class="faq-body">
-                            <p>Our seva includes annadanam (free meals), education support for students, medical assistance, care for orphans, pilgrim lodging, construction of Kalyana Mandapams at pilgrimage centres, and special programs supporting athletes, IT professionals, and youth employment.</p>
+                            <p data-te="మా సేవలలో అన్నదానం (ఉచిత భోజనం), విద్యార్థులకు విద్యా సహాయం, వైద్య సహాయం, అనాథ సంరక్షణ, తీర్థయాత్రికుల వసతి, తీర్థక్షేత్రాల వద్ద కళ్యాణ మండపాల నిర్మాణం మరియు క్రీడాకారులు, IT నిపుణులు మరియు యువ ఉపాధికి మద్దతు ఇచ్చే ప్రత్యేక కార్యక్రమాలు ఉన్నాయి.">Our seva includes annadanam (free meals), education support for students, medical assistance, care for orphans, pilgrim lodging, construction of Kalyana Mandapams at pilgrimage centres, and special programs supporting athletes, IT professionals, and youth employment.</p>
                         </div>
                     </details>
                 </div>
@@ -649,11 +658,11 @@
         <div class="container cta-inner">
             <div class="cta-text">
                 <span class="cta-mark">||  ॐ  ||</span>
-                <h2>Serve people. Earn blessings. Support humanity.</h2>
-                <p>One contribution today funds a week of seva — meals, medicine, shelter, hope.</p>
+                <h2 data-te="ప్రజలకు సేవ చేయండి. ఆశీర్వాదాలు పొందండి. మానవత్వానికి మద్దతు ఇవ్వండి.">Serve people. Earn blessings. Support humanity.</h2>
+                <p data-te="ఈ రోజు ఒక విరాళం వారం రోజుల సేవకు నిధులు అందిస్తుంది — భోజనం, మందు, ఆశ్రయం, ఆశ.">One contribution today funds a week of seva — meals, medicine, shelter, hope.</p>
             </div>
             <div class="cta-actions">
-                <a href="#donate" class="btn btn-light btn-large">Donate Now <i data-lucide="arrow-right"></i></a>
+                <a href="#donate" class="btn btn-light btn-large"><span data-te="విరాళం ఇవ్వండి">Donate Now</span> <i data-lucide="arrow-right"></i></a>
                 <a href="tel:9052963152" class="btn btn-outline-light btn-large"><i data-lucide="phone"></i> 9052963152</a>
             </div>
         </div>
@@ -673,43 +682,43 @@
                             </svg>
                         </span>
                         <div class="logo-text">
-                            <h3>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h3>
-                            <span class="logo-tag">Serve · Support · Uplift</span>
+                            <h3 data-te='శ్రీ వాసవి అమ్మ <span class="logo-accent">సేవా ట్రస్ట్</span>'>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h3>
+                            <span class="logo-tag" data-te="సేవ · మద్దతు · ఉద్ధరణ">Serve · Support · Uplift</span>
                         </div>
                     </a>
-                    <p class="footer-tagline">
+                    <p class="footer-tagline" data-te="ప్రజలకు సేవ · ఆశీర్వాదాలు పొందండి · మానవత్వానికి మద్దతు. పారదర్శక సేవకు అంకితమైన నమోదిత ధర్మ సంస్థ.">
                         Serve people · Earn blessings · Support humanity. A registered charitable trust
                         committed to transparent seva.
                     </p>
                     <div class="footer-stamp">
                         <i data-lucide="shield-check"></i>
                         <div>
-                            <strong>80G Tax Exempt</strong>
+                            <strong data-te="80G పన్ను మినహాయింపు">80G Tax Exempt</strong>
                             <small>URN ABOTS1850PF2026101</small>
                         </div>
                     </div>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Explore</h4>
+                    <h4 data-te="అన్వేషించండి">Explore</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#support">Our Seva</a></li>
-                        <li><a href="#recent">Recent Work</a></li>
-                        <li><a href="#programs">Special Programs</a></li>
-                        <li><a href="#membership">Donor Membership</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="#about" data-te="గురించి">About</a></li>
+                        <li><a href="#support" data-te="మా సేవ">Our Seva</a></li>
+                        <li><a href="#recent" data-te="ఇటీవలి సేవలు">Recent Work</a></li>
+                        <li><a href="#programs" data-te="ప్రత్యేక కార్యక్రమాలు">Special Programs</a></li>
+                        <li><a href="#membership" data-te="దాత సభ్యత్వం">Donor Membership</a></li>
+                        <li><a href="#faq" data-te="ప్రశ్నలు">FAQ</a></li>
+                        <li><a href="privacy.html" data-te="గోప్యతా విధానం">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-te="వాడుక నిబంధనలు">Terms of Use</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col footer-contact">
-                    <h4>Contact</h4>
+                    <h4 data-te="సంప్రదించండి">Contact</h4>
                     <ul>
                         <li>
                             <i data-lucide="map-pin"></i>
-                            <span>
+                            <span data-te="# 16/340, గాంధీ రోడ్<br>ప్రొద్దుటూరు 516 360<br>కడప జిల్లా, ఆంధ్రప్రదేశ్">
                                 # 16/340, Gandhi Road<br>
                                 Proddatur 516 360<br>
                                 Kadapa District, Andhra Pradesh
@@ -728,8 +737,8 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Sri Vasavi Amma Seva Trust. All rights reserved.</p>
-                <p class="footer-mantra">सेवा परमो धर्मः · Service is the highest duty</p>
+                <p data-te="&copy; 2026 శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">&copy; 2026 Sri Vasavi Amma Seva Trust. All rights reserved.</p>
+                <p class="footer-mantra">सेवा परमो धर्मः · <span data-te="సేవే అత్యున్నత ధర్మం">Service is the highest duty</span></p>
             </div>
         </div>
     </footer>
@@ -737,12 +746,12 @@
     <!-- Floating Donate (Mobile) -->
     <a href="#donate" class="fab-donate">
         <i data-lucide="heart"></i>
-        <span>Donate</span>
+        <span data-te="విరాళం">Donate</span>
     </a>
 
     <!-- Copy Toast -->
-    <div class="toast" id="toast">Copied to clipboard</div>
+    <div class="toast" id="toast" data-te-msg="క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది">Copied to clipboard</div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

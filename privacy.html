@@ -9,10 +9,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Noto+Serif+Telugu:wght@400;500;600;700&family=Tiro+Devanagari+Sanskrit&display=swap" rel="stylesheet">
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
         <div class="container ribbon-inner">
             <span class="ribbon-mark">सेवा परमो धर्मः</span>
             <span class="ribbon-sep">·</span>
-            <span class="ribbon-text">Registered Charitable Trust · 80G Eligible · URN ABOTS1850PF2026101</span>
+            <span class="ribbon-text" data-te="నమోదిత ధర్మ సంస్థ · 80G అర్హత · URN ABOTS1850PF2026101">Registered Charitable Trust · 80G Eligible · URN ABOTS1850PF2026101</span>
             <span class="ribbon-sep ribbon-hide-sm">·</span>
             <a href="tel:9052963152" class="ribbon-link ribbon-hide-sm"><i data-lucide="phone"></i>9052963152</a>
         </div>
@@ -39,20 +39,25 @@
                     </svg>
                 </span>
                 <div class="logo-text">
-                    <h1>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h1>
-                    <span class="logo-tag">Serve · Support · Uplift</span>
+                    <h1 data-te='శ్రీ వాసవి అమ్మ <span class="logo-accent">సేవా ట్రస్ట్</span>'>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h1>
+                    <span class="logo-tag" data-te="సేవ · మద్దతు · ఉద్ధరణ">Serve · Support · Uplift</span>
                 </div>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#support">Seva</a></li>
-                <li><a href="index.html#recent">Recent Work</a></li>
-                <li><a href="index.html#membership">Membership</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#about" data-te="గురించి">About</a></li>
+                <li><a href="index.html#support" data-te="సేవ">Seva</a></li>
+                <li><a href="index.html#recent" data-te="ఇటీవలి సేవలు">Recent Work</a></li>
+                <li><a href="index.html#membership" data-te="సభ్యత్వం">Membership</a></li>
+                <li><a href="index.html#faq" data-te="ప్రశ్నలు">FAQ</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                <span class="lang-opt" data-lang="en">EN</span>
+                <span class="lang-divider">|</span>
+                <span class="lang-opt" data-lang="te">తె</span>
+            </button>
             <a href="index.html#donate" class="btn btn-primary nav-cta">
                 <i data-lucide="heart"></i>
-                Donate Now
+                <span data-te="విరాళం ఇవ్వండి">Donate Now</span>
             </a>
             <button class="mobile-menu-btn" aria-label="Toggle Menu" id="mobileMenuBtn">
                 <i data-lucide="menu"></i>
@@ -60,27 +65,33 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html#about">About</a>
-        <a href="index.html#support">Seva</a>
-        <a href="index.html#recent">Recent Work</a>
-        <a href="index.html#membership">Membership</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#donate" class="btn btn-primary">Donate Now</a>
+        <a href="index.html#about" data-te="గురించి">About</a>
+        <a href="index.html#support" data-te="సేవ">Seva</a>
+        <a href="index.html#recent" data-te="ఇటీవలి సేవలు">Recent Work</a>
+        <a href="index.html#membership" data-te="సభ్యత్వం">Membership</a>
+        <a href="index.html#faq" data-te="ప్రశ్నలు">FAQ</a>
+        <button class="lang-toggle lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language">
+            <span class="lang-opt" data-lang="en">English</span>
+            <span class="lang-divider">|</span>
+            <span class="lang-opt" data-lang="te">తెలుగు</span>
+        </button>
+        <a href="index.html#donate" class="btn btn-primary" data-te="విరాళం ఇవ్వండి">Donate Now</a>
     </div>
 
     <!-- Legal Hero -->
     <header class="legal-hero">
         <div class="container">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="index.html">Home</a>
+                <a href="index.html" data-te="హోమ్">Home</a>
                 <i data-lucide="chevron-right"></i>
-                <span>Privacy Policy</span>
+                <span data-te="గోప్యతా విధానం">Privacy Policy</span>
             </nav>
-            <span class="section-eyebrow">Legal</span>
-            <h1 class="legal-title">Privacy Policy</h1>
-            <p class="legal-meta">Last updated: May 2026</p>
-            <p class="legal-intro">
+            <span class="section-eyebrow" data-te="చట్టపరమైన">Legal</span>
+            <h1 class="legal-title" data-te="గోప్యతా విధానం">Privacy Policy</h1>
+            <p class="legal-meta" data-te="చివరిగా నవీకరించబడింది: మే 2026">Last updated: May 2026</p>
+            <p class="legal-intro" data-te="శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్ ('మేము', 'మా') <a href='index.html'>svast.org</a> (Svast) ను నిర్వహిస్తుంది. మీరు మా వెబ్‌సైట్‌ను సందర్శించినప్పుడు లేదా మమ్మల్ని సంప్రదించినప్పుడు మేము సమాచారాన్ని ఎలా సేకరిస్తాము మరియు ఉపయోగిస్తాము అనేది ఈ విధానం వివరిస్తుంది.">
                 Sri Vasavi Amma Seva Trust ("we", "us") operates
                 <a href="index.html">svast.org</a> (Svast). This policy explains how
                 we collect and use information when you visit our website or contact us.
@@ -95,8 +106,8 @@
 
                 <section class="legal-section">
                     <span class="legal-number">01</span>
-                    <h2>Information we collect</h2>
-                    <p>
+                    <h2 data-te="మేము సేకరించే సమాచారం">Information we collect</h2>
+                    <p data-te="మీరు మాకు ఇమెయిల్ పంపినప్పుడు లేదా కాల్ చేసినప్పుడు, మేము మీ పేరు, ఫోన్ నంబర్, ఇమెయిల్ చిరునామా మరియు విరాళాలు లేదా సభ్యత్వం గురించి మీరు పంచుకోవాలనుకునే వివరాలను పొందవచ్చు. మా వెబ్‌సైట్ హోస్టింగ్ అనలిటిక్స్ ద్వారా ప్రామాణిక సాంకేతిక లాగ్‌లను (బ్రౌజర్ రకం, సందర్శించిన పేజీలు) సేకరించవచ్చు.">
                         When you email or call us, we may receive your name, phone number, email address,
                         and any details you choose to share about donations or membership. Our website may
                         collect standard technical logs (browser type, pages visited) through hosting
@@ -106,18 +117,18 @@
 
                 <section class="legal-section">
                     <span class="legal-number">02</span>
-                    <h2>How we use information</h2>
+                    <h2 data-te="మేము సమాచారాన్ని ఎలా ఉపయోగిస్తాము">How we use information</h2>
                     <ul class="legal-list">
-                        <li><i data-lucide="check"></i> To respond to donation and membership enquiries</li>
-                        <li><i data-lucide="check"></i> To issue donation receipts and 80G documentation where applicable</li>
-                        <li><i data-lucide="check"></i> To improve our website and seva programs</li>
+                        <li><i data-lucide="check"></i> <span data-te="విరాళం మరియు సభ్యత్వ విచారణలకు ప్రతిస్పందించడానికి">To respond to donation and membership enquiries</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="వర్తించే చోట విరాళం రశీదులు మరియు 80G పత్రాలను జారీ చేయడానికి">To issue donation receipts and 80G documentation where applicable</span></li>
+                        <li><i data-lucide="check"></i> <span data-te="మా వెబ్‌సైట్ మరియు సేవా కార్యక్రమాలను మెరుగుపరచడానికి">To improve our website and seva programs</span></li>
                     </ul>
                 </section>
 
                 <section class="legal-section">
                     <span class="legal-number">03</span>
-                    <h2>Sharing</h2>
-                    <p>
+                    <h2 data-te="భాగస్వామ్యం">Sharing</h2>
+                    <p data-te="మేము వ్యక్తిగత డేటాను విక్రయించము. వెబ్‌సైట్‌ను నిర్వహించడానికి లేదా చట్టానికి లోబడి ఉండటానికి అవసరమైన సేవా ప్రదాతలతో మాత్రమే సమాచారం పంచుకోబడవచ్చు.">
                         We do not sell personal data. Information may be shared only with service providers
                         required to operate the website or comply with law.
                     </p>
@@ -125,16 +136,16 @@
 
                 <section class="legal-section legal-section-contact">
                     <span class="legal-number">04</span>
-                    <h2>Contact</h2>
-                    <p>Questions about this policy? Reach out to us directly.</p>
+                    <h2 data-te="సంప్రదించండి">Contact</h2>
+                    <p data-te="ఈ విధానం గురించి ప్రశ్నలు ఉన్నాయా? మమ్మల్ని నేరుగా సంప్రదించండి.">Questions about this policy? Reach out to us directly.</p>
                     <div class="legal-contact">
                         <a href="mailto:svamsevatrust@gmail.com" class="contact-line">
                             <i data-lucide="mail"></i>
-                            <span><small>Email</small><strong>svamsevatrust@gmail.com</strong></span>
+                            <span><small data-te="ఇమెయిల్">Email</small><strong>svamsevatrust@gmail.com</strong></span>
                         </a>
                         <a href="tel:9052963152" class="contact-line">
                             <i data-lucide="phone"></i>
-                            <span><small>Phone</small><strong>9052963152</strong></span>
+                            <span><small data-te="ఫోన్">Phone</small><strong>9052963152</strong></span>
                         </a>
                     </div>
                 </section>
@@ -142,15 +153,15 @@
                 <div class="legal-related">
                     <a href="terms.html" class="legal-related-link">
                         <div>
-                            <span>Related</span>
-                            <strong>Terms of Use</strong>
+                            <span data-te="సంబంధిత">Related</span>
+                            <strong data-te="వాడుక నిబంధనలు">Terms of Use</strong>
                         </div>
                         <i data-lucide="arrow-up-right"></i>
                     </a>
                     <a href="index.html#donate" class="legal-related-link legal-related-cta">
                         <div>
-                            <span>Ready to give</span>
-                            <strong>Donate to seva</strong>
+                            <span data-te="సహాయం చేయడానికి సిద్ధంగా ఉన్నారా">Ready to give</span>
+                            <strong data-te="సేవకు విరాళం ఇవ్వండి">Donate to seva</strong>
                         </div>
                         <i data-lucide="heart"></i>
                     </a>
@@ -164,11 +175,11 @@
         <div class="container cta-inner">
             <div class="cta-text">
                 <span class="cta-mark">||  ॐ  ||</span>
-                <h2>Serve people. Earn blessings. Support humanity.</h2>
-                <p>One contribution today funds a week of seva — meals, medicine, shelter, hope.</p>
+                <h2 data-te="ప్రజలకు సేవ చేయండి. ఆశీర్వాదాలు పొందండి. మానవత్వానికి మద్దతు ఇవ్వండి.">Serve people. Earn blessings. Support humanity.</h2>
+                <p data-te="ఈ రోజు ఒక విరాళం వారం రోజుల సేవకు నిధులు అందిస్తుంది — భోజనం, మందు, ఆశ్రయం, ఆశ.">One contribution today funds a week of seva — meals, medicine, shelter, hope.</p>
             </div>
             <div class="cta-actions">
-                <a href="index.html#donate" class="btn btn-light btn-large">Donate Now <i data-lucide="arrow-right"></i></a>
+                <a href="index.html#donate" class="btn btn-light btn-large"><span data-te="విరాళం ఇవ్వండి">Donate Now</span> <i data-lucide="arrow-right"></i></a>
                 <a href="tel:9052963152" class="btn btn-outline-light btn-large"><i data-lucide="phone"></i> 9052963152</a>
             </div>
         </div>
@@ -188,43 +199,43 @@
                             </svg>
                         </span>
                         <div class="logo-text">
-                            <h3>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h3>
-                            <span class="logo-tag">Serve · Support · Uplift</span>
+                            <h3 data-te='శ్రీ వాసవి అమ్మ <span class="logo-accent">సేవా ట్రస్ట్</span>'>Sri Vasavi Amma <span class="logo-accent">Seva Trust</span></h3>
+                            <span class="logo-tag" data-te="సేవ · మద్దతు · ఉద్ధరణ">Serve · Support · Uplift</span>
                         </div>
                     </a>
-                    <p class="footer-tagline">
+                    <p class="footer-tagline" data-te="ప్రజలకు సేవ · ఆశీర్వాదాలు పొందండి · మానవత్వానికి మద్దతు. పారదర్శక సేవకు అంకితమైన నమోదిత ధర్మ సంస్థ.">
                         Serve people · Earn blessings · Support humanity. A registered charitable trust
                         committed to transparent seva.
                     </p>
                     <div class="footer-stamp">
                         <i data-lucide="shield-check"></i>
                         <div>
-                            <strong>80G Tax Exempt</strong>
+                            <strong data-te="80G పన్ను మినహాయింపు">80G Tax Exempt</strong>
                             <small>URN ABOTS1850PF2026101</small>
                         </div>
                     </div>
                 </div>
 
                 <div class="footer-col">
-                    <h4>Explore</h4>
+                    <h4 data-te="అన్వేషించండి">Explore</h4>
                     <ul>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#support">Our Seva</a></li>
-                        <li><a href="index.html#recent">Recent Work</a></li>
-                        <li><a href="index.html#programs">Special Programs</a></li>
-                        <li><a href="index.html#membership">Donor Membership</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="index.html#about" data-te="గురించి">About</a></li>
+                        <li><a href="index.html#support" data-te="మా సేవ">Our Seva</a></li>
+                        <li><a href="index.html#recent" data-te="ఇటీవలి సేవలు">Recent Work</a></li>
+                        <li><a href="index.html#programs" data-te="ప్రత్యేక కార్యక్రమాలు">Special Programs</a></li>
+                        <li><a href="index.html#membership" data-te="దాత సభ్యత్వం">Donor Membership</a></li>
+                        <li><a href="index.html#faq" data-te="ప్రశ్నలు">FAQ</a></li>
+                        <li><a href="privacy.html" data-te="గోప్యతా విధానం">Privacy Policy</a></li>
+                        <li><a href="terms.html" data-te="వాడుక నిబంధనలు">Terms of Use</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col footer-contact">
-                    <h4>Contact</h4>
+                    <h4 data-te="సంప్రదించండి">Contact</h4>
                     <ul>
                         <li>
                             <i data-lucide="map-pin"></i>
-                            <span>
+                            <span data-te="# 16/340, గాంధీ రోడ్<br>ప్రొద్దుటూరు 516 360<br>కడప జిల్లా, ఆంధ్రప్రదేశ్">
                                 # 16/340, Gandhi Road<br>
                                 Proddatur 516 360<br>
                                 Kadapa District, Andhra Pradesh
@@ -243,19 +254,21 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2026 Sri Vasavi Amma Seva Trust. All rights reserved.</p>
-                <p class="footer-mantra">सेवा परमो धर्मः · Service is the highest duty</p>
+                <p data-te="&copy; 2026 శ్రీ వాసవి అమ్మ సేవా ట్రస్ట్. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.">&copy; 2026 Sri Vasavi Amma Seva Trust. All rights reserved.</p>
+                <p class="footer-mantra">सेवा परमो धर्मः · <span data-te="సేవే అత్యున్నత ధర్మం">Service is the highest duty</span></p>
             </div>
         </div>
     </footer>
 
+    <!-- Floating Donate (Mobile) -->
     <a href="index.html#donate" class="fab-donate">
         <i data-lucide="heart"></i>
-        <span>Donate</span>
+        <span data-te="విరాళం">Donate</span>
     </a>
 
-    <div class="toast" id="toast">Copied to clipboard</div>
+    <!-- Copy Toast -->
+    <div class="toast" id="toast" data-te-msg="క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది">Copied to clipboard</div>
 
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

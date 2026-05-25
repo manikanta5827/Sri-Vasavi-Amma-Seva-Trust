@@ -143,3 +143,79 @@ if (donateSection && fab) {
     }, { threshold: 0.15 });
     fabObserver.observe(donateSection);
 }
+
+// === Language Switcher Logic ===
+const langToggles = document.querySelectorAll('.lang-toggle');
+let currentLang = localStorage.getItem('svam_lang') || 'en';
+
+function updateLanguageUI(lang) {
+    currentLang = lang;
+    localStorage.setItem('svam_lang', lang);
+    
+    // Update body class for fonts
+    if (lang === 'te') {
+        document.body.classList.add('lang-te');
+        document.documentElement.setAttribute('lang', 'te');
+    } else {
+        document.body.classList.remove('lang-te');
+        document.documentElement.setAttribute('lang', 'en');
+    }
+
+    // Update toggle buttons active state
+    document.querySelectorAll('.lang-opt').forEach(opt => {
+        opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+
+    // Update all elements with data-te
+    document.querySelectorAll('[data-te]').forEach(el => {
+        // Store original English if not already stored
+        if (!el.dataset.en) {
+            el.dataset.en = el.innerHTML;
+        }
+        
+        if (lang === 'te') {
+            el.innerHTML = el.dataset.te;
+        } else {
+            el.innerHTML = el.dataset.en;
+        }
+    });
+
+    // Special case for toast message
+    const toastEl = document.getElementById('toast');
+    if (toastEl && toastEl.dataset.teMsg) {
+        if (!toastEl.dataset.enMsg) toastEl.dataset.enMsg = "Copied to clipboard";
+        // Note: The toast message is updated dynamically in showToast, 
+        // but we might want to change the default text here too.
+    }
+}
+
+// Override showToast to handle translation
+const originalShowToast = showToast;
+showToast = function(msg) {
+    const toastEl = document.getElementById('toast');
+    if (currentLang === 'te' && toastEl && toastEl.dataset.teMsg) {
+        // If the message is the default "Copied", use the Telugu one
+        if (msg.toLowerCase().includes('copied')) {
+            return originalShowToast(toastEl.dataset.teMsg);
+        }
+    }
+    originalShowToast(msg);
+};
+
+// Event Listeners
+langToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        const newLang = currentLang === 'en' ? 'te' : 'en';
+        updateLanguageUI(newLang);
+    });
+});
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', () => {
+    if (currentLang === 'te') {
+        updateLanguageUI('te');
+    } else {
+        // Ensure active class is set for EN
+        document.querySelectorAll('.lang-opt[data-lang="en"]').forEach(opt => opt.classList.add('active'));
+    }
+});
